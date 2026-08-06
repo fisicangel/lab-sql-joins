@@ -17,7 +17,7 @@ SELECT s.store_id, c.city, co.country FROM sakila.store AS s
 JOIN sakila.address AS a
 ON a.address_id = s.address_id
 JOIN sakila.city AS c
-ON c.city_id = c.city_id
+ON a.city_id = c.city_id
 JOIN sakila.country AS co
 ON c.country_id = co.country_id;
 
