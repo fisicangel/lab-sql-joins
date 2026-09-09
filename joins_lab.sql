@@ -8,9 +8,6 @@ JOIN sakila.film AS f
 ON c.film_id = f.film_id
 GROUP BY ca.category_id;
 
-SELECT * FROM sakila.category;
-SELECT * FROM sakila.film_category;
-
 
 -- 2. Retrieve the store ID, city, and country for each store.
 SELECT s.store_id, c.city, co.country FROM sakila.store AS s
